@@ -91,8 +91,8 @@ The stored category data can drive:
 - category summaries
 - spending insights
 - trend analysis
-![Demo Image](images/img4.jpg)
-![Demo Image](images/img6.jpg)
+![Demo Image](images/img4.png)
+![Demo Image](images/img6.png)
 ---
 
 ## 4. Why This Project Is Different
@@ -303,9 +303,6 @@ Build and run the Android app on your device.
 
 The app listens for checkout/payment-related UI text.
 
-📷 **Insert screenshot here**
-`[checkout_detection.png]`
-
 ---
 
 ### B. Amount detection
@@ -316,8 +313,7 @@ The app extracts payable amounts, including comma-separated values like:
 * ₹16,990
 * ₹1,20,000
 
-📷 **Insert screenshot here**
-`[amount_detection.png]`
+
 
 ---
 
@@ -345,7 +341,7 @@ The backend sends app, amount, and product to OpenClaw for categorization and wa
 The AI warning is shown as a notification on the phone.
 
 📷 **Insert screenshot here**
-![Demo Image](images/img5.jpg)
+![Demo Image](images/img5.png)
 
 ---
 
@@ -353,8 +349,6 @@ The AI warning is shown as a notification on the phone.
 
 If the amount crosses the threshold, a fullscreen impulse warning appears.
 
-📷 **Insert screenshot here**
-`[fullscreen_overlay.png]`
 
 ---
 
