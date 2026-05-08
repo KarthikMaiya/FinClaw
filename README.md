@@ -194,7 +194,7 @@ Dashboard Analytics
 ### Step 1: Clone the repository
 
 ```bash
-git clone <YOUR_REPOSITORY_URL>
+git clone https://github.com/KarthikMaiya/FinClaw.git
 cd FinClaw
 ```
 
@@ -345,7 +345,7 @@ The backend sends app, amount, and product to OpenClaw for categorization and wa
 The AI warning is shown as a notification on the phone.
 
 📷 **Insert screenshot here**
-![Demo Image](images/img1.jpg)
+![Demo Image](images/img5.jpg)
 
 ---
 
