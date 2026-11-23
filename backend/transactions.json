@@ -1,0 +1,25 @@
+[
+    {
+        "product": "juice",
+        "category": "Food",
+        "amount": "20"
+    },
+    {
+        "id": "tx_1794991498095",
+        "product": "apple",
+        "category": "Food",
+        "amount": "\u20b920",
+        "numeric_amount": 20.0,
+        "timestamp": "2026-11-18 14:14:58",
+        "status": "COMPLETED"
+    },
+    {
+        "id": "tx_1794991506130",
+        "product": "vadapav",
+        "category": "Food",
+        "amount": "\u20b935",
+        "numeric_amount": 35.0,
+        "timestamp": "2026-11-18 14:15:06",
+        "status": "COMPLETED"
+    }
+]

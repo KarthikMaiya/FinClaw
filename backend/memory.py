@@ -2,7 +2,8 @@ import json
 import os
 
 
-TRANSACTION_FILE = "transactions.json"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+TRANSACTION_FILE = os.path.join(BASE_DIR, "transactions.json")
 
 
 def load_transactions():
@@ -48,3 +49,11 @@ def save_transaction(
         )
 
     print("✅ TRANSACTION SAVED")
+
+
+def clear_transactions():
+    """Clear all recorded transactions."""
+    if os.path.exists(TRANSACTION_FILE):
+        with open(TRANSACTION_FILE, "w") as file:
+            json.dump([], file, indent=4)
+    print("🗑 TRANSACTIONS CLEARED")

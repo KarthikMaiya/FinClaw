@@ -10,8 +10,9 @@ client = Groq(
 
 def generate_warning(prompt):
 
+    model = os.getenv("GROQ_MODEL", "openai/gpt-oss-20b")
     response = client.chat.completions.create(
-        model="llama-3.1-8b-instant",
+        model=model,
         messages=[
             {
                 "role": "user",
@@ -20,4 +21,4 @@ def generate_warning(prompt):
         ]
     )
 
-    return response.choices[0].message.content
+    return response.choices[0].message.content

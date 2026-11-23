@@ -1,4 +1,5 @@
 from tools.groq_tool import generate_warning
+from tools.telegram_tool import send_telegram_message
 from memory import save_transaction
 
 
@@ -64,6 +65,20 @@ Generate:
         warning = generate_warning(prompt)
 
         print(f"🤖 AI Warning: {warning}")
+
+        telegram_message = (
+            "🦞 Finance Guardian Alert\n"
+            f"App: {app_name}\n"
+            f"Product: {product}\n"
+            f"Amount: {amount}\n"
+            f"Category: {category}\n"
+            f"Risk: {risk}\n\n"
+            f"{warning}"
+        )
+
+        if send_telegram_message(telegram_message):
+
+            print("📨 Telegram alert sent")
 
         print("━━━━━━━━━━━━━━━━━━━━━━")
 
